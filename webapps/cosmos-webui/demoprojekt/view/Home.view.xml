@@ -1,0 +1,66 @@
+<mvc:View
+  height="100%"
+  controllerName="demoprojekt.controller.Home"
+  xmlns="sap.m"
+  xmlns:l="sap.ui.layout"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns:core="sap.ui.core"
+  xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+  <Page
+    title="COSMOS WebUI DemoProjekt"
+    enableScrolling="true"
+    showNavButton="false"
+    showFooter="false"
+    class="sapUiContentPadding sapUiResponsivePadding--header sapUiResponsivePadding--subHeader sapUiResponsivePadding--content sapUiResponsivePadding--footer">
+
+    <headerContent>
+			<Button icon="sap-icon://action" tooltip="Share" />
+		</headerContent>
+		<subHeader>
+			<OverflowToolbar>
+
+			</OverflowToolbar>
+		</subHeader>
+
+    <FlexBox
+      height="100px"
+      alignItems="Start"
+      justifyContent="Center">
+      <Button text="1" type="Emphasized" class="sapUiSmallMarginEnd" press=".showMessage('Hello World!')" />
+      <Button text="2" type="Reject" class="sapUiSmallMarginEnd" press=".showMessage('Ok, nochmal .... Hello World!')" />
+      <Button text="3" type="Accept" press=".showMessage('Der Knopf macht genau das gleiche wie die anderen beiden.')" />
+    </FlexBox>
+
+    <content>
+
+      <VBox>
+				<Text text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat" />
+			</VBox>
+
+      <GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Country-Specific Profit Margin"
+			 frameType = "OneByHalf" subheader="Expenses" press="onPress">
+    		<TileContent unit="EUR" footer="Current Quarter" >
+    			<NumericContent scale="M" value="1.96" valueColor="Error" indicator="Up" withMargin="false" />
+    		</TileContent>
+    	</GenericTile>
+
+    	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="US Profit Margin" press="onPress" frameType = "OneByHalf">
+    		<TileContent unit="Unit">
+    			<NumericContent scale="%" value="12" valueColor="Critical" indicator="Up" withMargin="false" />
+    		</TileContent>
+    	</GenericTile>
+
+    	<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Sales Fulfillment Application Title"
+    				 subheader="Subtitle" press="onPress" frameType = "TwoByHalf">
+    		<TileContent unit="EUR" footer="Current Quarter">
+    			<ImageContent src="sap-icon://home-share" />
+    		</TileContent>
+    	</GenericTile>
+
+		</content>
+
+		<footer>
+		</footer>
+
+  </Page>
+</mvc:View>
