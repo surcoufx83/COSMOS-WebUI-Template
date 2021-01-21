@@ -38,3 +38,5 @@ Die folgende Anleitung leitet dich durch den Installationsprozess um eine minima
 ### Konfiguration testen
 1. In einem Browser lade die Url `https://localhost:8443/cosmos-webui/?nls=EN&application=demoprojekt` bzw. entsprechend andere Hostname/Port je nach Konfiguration. Der Browser sollte dir nun die demoprojekt-Startseite zeigen.
 1. Du bist Fertig mit dem Aufsetzen eines Grundgerüsts. Jetzt kommt die eigentliche Arbeit...
+
+![Preview image](/screenshot.png?raw=true)
